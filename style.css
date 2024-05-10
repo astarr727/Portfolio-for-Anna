@@ -1,0 +1,467 @@
+/* 
+Colors used:
+Primary: #FFE5b4;
+Secondary: #32CD32;
+White:#ffffff;
+Black: #000000;
+*/
+
+body {
+    box-sizing: border-box;
+    background-color: #FEFAF8;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    /* Sets the font size to small */
+    font-weight: normal;
+    /* Sets the font weight to 300 */
+    line-height: normal;
+    /* Sets the line-height to normal * the font-size */
+    color: #747474;
+}
+
+h1,
+
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.25em;
+    font-weight: 400;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+a {
+    color: #f5f6d4;
+    text-decoration: none;
+    /* No underlining */
+}
+
+a:hover {
+    color: #40cc6c;
+    text-decoration: underline;
+    /* Underlining when hovering over a link */
+}
+
+.button {
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on
+    this in the next exercise */
+    /* needed to override the default link color */
+    font-weight: 400;
+    text-decoration-color: #B65B00;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #994c30;
+    /* width of the border, type, color */
+    transition: all 0.2s ease;
+    opacity: 100;
+    color: #ffffff;
+    /* Change this to the desired font color */
+    background-color: #eebcaa;
+}
+
+/* Target the button element */
+button {
+    background-color: #edaf90;
+    /* Change this to the desired background color */
+    color: #B65B00;
+    /* Optional: Change the font color for better contrast */
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+img {
+    max-width: 100%;
+    /* Ensures the image doesn't exceed its original size */
+    height: auto;
+    /* Maintains the image's aspect ratio */
+}
+
+main {
+    border: 5px solid black;
+    text-align: center;
+    margin: 20px auto 10px;
+    padding: 20px;
+    /* Adds a 20px inner spacing to all sides */
+}
+
+
+footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    padding: 0 15px;
+}
+
+#hero {
+    background-color: #eebcaa;
+}
+
+
+header {
+    background-color: rgb(238, 213, 148);
+    padding: 10px 0;
+    padding: 10px 5px;
+    /* Adds 10px to top & bottom & 5px to left and right */
+    padding: 10px 5px 15px 5px;
+    /* Adds 10px top, 5px right, 15px bottom, 5px left */
+    margin: 10px;
+    border-bottom: 3px solid #4a4a4a;
+    width: 100%;
+}
+
+header a {
+    color: black;
+}
+
+nav>ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Layout styling */
+.container {
+    padding: 0 15px;
+}
+
+#hero {
+    background-color: antiquewhite;
+    padding: 20px 0;
+}
+
+#hero h1 {
+    text-align: center;
+    /* Centers text */
+}
+
+footer {
+    text-align: center;
+    background: #eebcaa;
+    padding: 10px;
+}
+
+.social {
+    text-align: center;
+}
+
+.social a {
+    display: inline-block;
+    max-width: 25px;
+    height: 25px;
+}
+
+.social svg {
+    width: 5px;
+    height: auto;
+
+}
+
+.col-sm-1 {
+    width: 8.33%;
+}
+
+.col-sm-2 {
+    width: 16.66%;
+}
+
+.col-sm-3 {
+    width: 25%;
+}
+
+.col-sm-4 {
+    width: 33.33%;
+}
+
+.col-sm-5 {
+    width: 41.66%;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.col-sm-7 {
+    width: 58.33%;
+}
+
+.col-sm-8 {
+    width: 66.66%;
+}
+
+.col-sm-9 {
+    width: 75%;
+}
+
+.col-sm-10 {
+    width: 83.33%;
+}
+
+.col-sm-11 {
+    width: 91.66%;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+/* Animation */
+@keyframes color-change {
+    from {
+        fill: #edc655;
+    }
+
+    to {
+        fill: #f76414;
+    }
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+to {
+    fill: #f76414;
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+
+@media only screen and (min-width: 641px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+
+
+    }
+
+    nav>ul {
+        margin: 1em 0;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    nav>ul>li {
+        display: inline-block;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    nav ul {
+        margin-top: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    #hero span {
+        display: block;
+
+    }
+
+    [class*="col-"] {
+        float: right;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* CSS rules go here */
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* CSS rules go here */
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
