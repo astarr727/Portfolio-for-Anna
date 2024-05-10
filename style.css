@@ -80,6 +80,7 @@ a:hover {
     color: #ffffff;
     /* Change this to the desired font color */
     background-color: #eebcaa;
+    text-align: center;
 }
 
 /* Target the button element */
