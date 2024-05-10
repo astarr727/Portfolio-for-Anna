@@ -54,6 +54,10 @@ a {
     /* No underlining */
 }
 
+p {
+    text-align: center;
+}
+
 a:hover {
     color: #40cc6c;
     text-decoration: underline;
